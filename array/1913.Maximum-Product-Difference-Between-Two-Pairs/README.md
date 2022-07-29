@@ -1,0 +1,7 @@
+# Leetcode
+
+#### Run server:
+
+````
+test ./...
+````
