@@ -20,6 +20,14 @@ func Test_reversePrefix(t *testing.T) {
 			},
 			want: "dcbaefd",
 		},
+		{
+			name: "Test #2",
+			args: args{
+				word: "xyxzxe",
+				ch:   'z',
+			},
+			want: "zxyxxe",
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

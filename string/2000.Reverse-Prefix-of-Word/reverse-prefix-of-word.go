@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -18,9 +17,7 @@ func reverseString(s string) string {
 func reversePrefix(word string, ch byte) string {
 	i := strings.Index(word, string(ch))
 
-	fmt.Println(reverseString(word[:i+1]))
-
-	word = reverseString(word[:i+1]) + word[i:]
+	word = reverseString(word[:i+1]) + word[i+1:]
 
 	return word
 }
